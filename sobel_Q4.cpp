@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <opencv2/opencv.hpp>
 
 using namespace std;
@@ -20,7 +20,7 @@ int main()
 	{
 		cap >> img;
 		Mat new_image = Mat::zeros(img.size(), img.type());
-		Sobel(img, new_image, -1, 1, 1);
+		Sobel(img, new_image, -1, 1, 1); // https://www.tutorialspoint.com/opencv/opencv_sobel_operator.htm
 		imshow("Imagem Modificada", new_image);
 		imshow("Imagem Original", img);
 	}
@@ -28,4 +28,3 @@ int main()
 	destroyAllWindows();
 	return 0;
 }
-*/
