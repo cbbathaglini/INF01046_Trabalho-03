@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <opencv2/opencv.hpp>
 
 using namespace std;
@@ -37,17 +37,9 @@ int main() {
 		imshow("Image", img);
 		namedWindow("Canny");
 		imshow("Canny", contours);
-		//imshow("Imagem modificada", imagem_modificada);
-		//imshow("Imagem Original", img);
 	}
 
 	destroyAllWindows();
 	return 0;
 
-
-
-	//namedWindow("Gray");
-	//imshow("Gray", gray_image);
-
-	waitKey(0);
-}*/
+}
