@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <opencv2/opencv.hpp>
 
 using namespace std;
@@ -20,7 +20,7 @@ int main()
 	{
 		cap >> img;
 		Mat new_image = Mat::zeros(img.size(), img.type());
-		img.convertTo(new_image,-1,  -1, 255);
+		img.convertTo(new_image,-1,  -1, 255); //alpha tem valor -1 e o beta 255
 		imshow("Imagem Modificada", new_image);
 		imshow("Imagem Original", img);
 	}
@@ -28,7 +28,7 @@ int main()
 	destroyAllWindows();
 	return 0;
 }
-*/
+
 
 
 
